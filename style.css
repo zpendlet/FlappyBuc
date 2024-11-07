@@ -8,27 +8,15 @@
 
  body {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
     margin: 0;
-    background-image: url("/large.png")
+    min-height: 100vh;
+    background-image: url("large.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
-    height: 100vh;  
     background-color: #f0f8ff;
-   
-}
-
-#image-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-#image-container img {
-    margin: auto;
 }
