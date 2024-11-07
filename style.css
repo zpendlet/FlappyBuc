@@ -1,6 +1,12 @@
 /* styles.css */
 
-body {
+/* Author(s): Zoe Pendleton
+ * Creation Date: 11/7/2024
+ * Last Revision Date: 11/7/2024
+ * Purpose: To add styling to the landing page 
+ */
+
+ body {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,5 +16,12 @@ body {
 }
 
 #image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+}
+
+#image-container img {
+    margin: auto;
 }
