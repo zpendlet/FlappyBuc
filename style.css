@@ -12,7 +12,12 @@
     align-items: center;
     min-height: 100vh;
     margin: 0;
+    background-image: url("/large.png")
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
     background-color: #f0f8ff;
+   
 }
 
 #image-container {
