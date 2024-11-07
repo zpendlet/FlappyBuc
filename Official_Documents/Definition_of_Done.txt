@@ -1,0 +1,16 @@
+As defined by dev team: 
+
+Is it SMART?
+
+Do we have a specific end-product in mind for each task?
+
+Can we measure what the task contributes to the end goal? 
+
+Do we have achievable expectations for each task?
+
+Is the work done relevant to the needed end-product?
+
+Is it done within the bounds of the sprint?
+
+
+(Code review from at least one other member of dev team)
