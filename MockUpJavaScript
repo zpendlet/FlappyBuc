@@ -6,7 +6,7 @@
 */
 
 
-
+function addBackground(){
 // Create a new image named mountain image
 var img = document.createElement('img');
 
@@ -23,3 +23,4 @@ var container = document.getElementById('image-container');
 
 //Attach the Mountains to the container 
 container.appendChild(img);
+}
