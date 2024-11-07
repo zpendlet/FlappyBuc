@@ -1,0 +1,10 @@
+- Use snake case for variable names with spaces for readability: (ex. snake_case = 123)
+- Use comment blocks above methods explaining its purpose and why you implemented the way you did. 
+    ex. 
+    */ 
+        comments 
+        comments 
+        */ 
+
+- Avoid in-line styling for clarity.
+- When doing CSS, keep similiar blocks together 
