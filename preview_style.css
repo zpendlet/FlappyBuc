@@ -53,7 +53,7 @@ body {
 .bucky {
     width: 80px;
     height: 200px; 
-    background-image: url("https://github.com/GreenSerpent7/FlappyBuc/blob/main/giphy.png");
+    background-image: url("giphy.png");
     background-repeat: no-repeat;
     background-size: contain;
     position: absolute; 
