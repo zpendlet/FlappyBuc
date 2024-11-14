@@ -27,10 +27,10 @@ body {
 }
 
 /* Pipe styles */
-/* Pipe styles */
+
 .pipe {
     width: 80px; 
-    height: 200px; 
+    height: 75px; 
     background-image: url("Pipe_Graphic.png"); 
     background-repeat: no-repeat;
     background-size: contain;
