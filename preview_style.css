@@ -1,0 +1,49 @@
+/* Basic body styling */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    min-height: 100vh;
+    background-color: #f0f8ff;
+    
+}
+
+/* Container styles */
+#container {
+    width: 600px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    background-image: url("larger.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+/* Pipe styles */
+/* Pipe styles */
+.pipe {
+    width: 80px; 
+    height: 200px; 
+    background-image: url("Pipe_Graphic.png"); 
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+}
+
+/* Position and invert the top pipe */
+.top-pipe {
+    top: 0;
+    transform: scaleY(-1); /* Invert the image vertically */
+}
+
+/* Position the bottom pipe */
+.bottom-pipe {
+    bottom: 0;
+}
