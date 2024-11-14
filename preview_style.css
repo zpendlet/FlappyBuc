@@ -47,3 +47,23 @@ body {
 .bottom-pipe {
     bottom: 0;
 }
+
+/* Bucky */
+
+.bucky {
+    width: 80px;
+    height: 200px; 
+    background-image: url("https://github.com/GreenSerpent7/FlappyBuc/blob/main/giphy.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute; 
+}
+
+/*  Display mid level*/
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; 
+}
