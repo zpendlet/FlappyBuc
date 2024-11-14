@@ -1,4 +1,3 @@
-/* Basic body styling */
 body {
     display: flex;
     justify-content: center;
@@ -6,7 +5,6 @@ body {
     margin: 0;
     min-height: 100vh;
     background-color: #f0f8ff;
-    
 }
 
 /* Container styles */
@@ -14,11 +12,10 @@ body {
     width: 600px;
     height: 400px;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     position: relative;
-    background-image: url("larger.png");
+    background-image: url("larger.png"); /* Assuming this is your background */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -26,44 +23,15 @@ body {
     font-family: "Comic Sans MS", cursive, sans-serif;
 }
 
-/* Pipe styles */
-
+/* Single pipe image */
 .pipe {
-    width: 80px; 
-    height: 75px; 
-    background-image: url("Pipe_Graphic.png"); 
+    width: 600px; 
+    height: 400px; 
+    background-image: url("Design_Visuals/Pipes.png"); 
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: contain; /* Keep the image in its natural proportions */
     position: absolute;
-}
-
-/* Position and invert the top pipe */
-.top-pipe {
-    top: 0;
-    transform: scaleY(-1); /* Invert the image vertically */
-}
-
-/* Position the bottom pipe */
-.bottom-pipe {
-    bottom: 0;
-}
-
-/* Bucky */
-
-.bucky {
-    width: 80px;
-    height: 200px; 
-    background-image: url("https://github.com/GreenSerpent7/FlappyBuc/blob/main/giphy.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    position: absolute; 
-}
-
-/*  Display mid level*/
-
-.center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the image */
 }
