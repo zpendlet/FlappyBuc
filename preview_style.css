@@ -31,12 +31,12 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); /* Center the image in the container */
+    transform: translate(-50%, -50%); /* Center the image *
 }
 
 .bucky{
-    width: 100px;
-    height: 300px;
+    width: 500px;
+    height: 400px;
     background-image: url("Design_Visuals/Bucky's disembodied head.png"); 
     background-repeat: no-repeat;
     background-size: contain;
