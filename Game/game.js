@@ -7,10 +7,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
     let y = 50; // Initial Y position (matches CSS top)
     let vert_velocity = 0; // Initial vertical velocity
-    const gravity = 0.5; // Gravity speed
+    const gravity = 0.7; // Gravity speed
     let is_game_started = false; // Game start flag
 
-    function update_position() {
+    function falling() {
         if (is_game_started) {
             // Apply gravity
             vert_velocity += gravity;
@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function game_loop() {
-        update_position(); // Update Bucky's position
+        falling(); // Update Bucky's position
         requestAnimationFrame(game_loop); // Keep the loop going
     }
 
