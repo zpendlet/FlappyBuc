@@ -1,0 +1,46 @@
+/* Basic body styling */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    min-height: 100vh;
+    background-color: #f0f8ff;
+}
+
+/* Container styles */
+#container {
+    width: 600px;
+    height: 400px;
+    position: relative; /* Necessary for positioning .bucky inside it */
+    background-image: url("/larger.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden; /* Ensures Bucky doesn't appear outside the container */
+}
+
+/* Pipe image styling */
+.pipe {
+    width: 600px;
+    height: 400px;
+    background-image: url("/Design_Visuals/Pipes.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Bucky element styling */
+.bucky {
+    width: 75px; 
+    height: 75px; 
+    background-image: url("/Design_Visuals/Bucky's disembodied head smaller.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 50px; /* Start fully inside the container */
+    left: 25px; /* Horizontal position, kept consistent */
+}
