@@ -10,6 +10,10 @@ document.addEventListener("DOMContentLoaded", () => {
     const gravity = 0.7; // Gravity speed
     let is_game_started = false; // Game start flag
 
+    let is_paused = False; //Tracks whether game is paused
+    let last_frame_time = 0; //Tracks game time while paused
+
+
     function falling() {
         if (is_game_started) {
             // Apply gravity
@@ -49,4 +53,25 @@ document.addEventListener("DOMContentLoaded", () => {
             game_loop();
         }
     });
+
+    document.addEventListener("keydown", (event) => {if (event.key == "p" || event.key == "P")  
+        {
+            toggle_pause();
+        }
+
+
+    })
 });
+
+
+function toggle_pause()
+{
+    is_paused = !is_paused;
+
+    if (!is_paused)
+    {
+        last_frame_time = performance.now();
+        game_loop(last_frame_time);
+    }
+
+}
