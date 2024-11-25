@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     let y = 50; // Initial Y position (matches CSS top)
     let vert_velocity = 0; // Initial vertical velocity
-    const gravity = 0.7; // Gravity speed
+    const gravity = 0.5; // Gravity speed
     let is_game_started = false; // Game start flag
 
     function falling() {
