@@ -1,3 +1,6 @@
+/* Citation: https://copilot.microsoft.com/?msockid=1507c1976a8f6a9e1d4bd2426b9d6b5b
+ */
+
 document.addEventListener("DOMContentLoaded", () => {
     const container = document.querySelector("#container");
     const bucky = document.querySelector(".bucky");
@@ -7,7 +10,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     let y = 50; // Initial Y position (matches CSS top)
     let vert_velocity = 0; // Initial vertical velocity
-    const gravity = 0.5; // Gravity speed
+    const gravity = 0.7; // Gravity speed
+    const jump_strength = -12; //Upward velocity for jump
     let is_game_started = false; // Game start flag
 
     function falling() {
@@ -38,6 +42,11 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
+    function jump(){
+        if(is_game_started){
+            vert_velocity = jump-strength; //set upward velocity
+        }
+    }
     function game_loop() {
         falling(); // Update Bucky's position
         requestAnimationFrame(game_loop); // Keep the loop going
@@ -47,6 +56,8 @@ document.addEventListener("DOMContentLoaded", () => {
         if (!is_game_started) {
             is_game_started = true;
             game_loop();
+        } else{
+            jump(); //Trigger jump if the game is already started
         }
     });
 });
