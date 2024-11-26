@@ -44,7 +44,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function jump(){
         if(is_game_started){
-            vert_velocity = jump-strength; //set upward velocity
+            vert_velocity = jump_strength; // Set upward velocity
+           
         }
     }
     function game_loop() {
