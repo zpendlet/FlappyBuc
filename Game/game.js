@@ -1,4 +1,4 @@
-/* Citation: https://copilot.microsoft.com/?msockid=1507c1976a8f6a9e1d4bd2426b9d6b5b
+/* Citation: https://copilot.cloud.microsoft/?fromcode=bingchat&redirectid=529F0A91369945A293D831F9318F215F&auth=2
  */
 
 document.addEventListener("DOMContentLoaded", () => {
