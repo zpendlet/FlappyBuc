@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function jump(){
         if(is_game_started){
-            vert_velocity = jump_strength; // Set upward velocity
+            vert_velocity = jump_strength; // move buck up with vert_velocity
            
         }
     }
@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", () => {
             is_game_started = true;
             game_loop();
         } else{
-            jump(); //Trigger jump if the game is already started
+            jump(); //once game starts, bucky can jup with the click button
         }
     });
 });
