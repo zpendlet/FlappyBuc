@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const maxPipeHeight = containerHeight - 50; // maximum per pipe
         const minPipeHeight = 100;  // minimum height per pipe
         const topPipeHeight = Math.floor(Math.random() * (maxPipeHeight - minPipeHeight)) + minPipeHeight; 
-        const bottomPipeHeight = containerHeight - topPipeHeight - pipeGap; // makes sure that there are gaps b/t pipes
+        const bottomPipeHeight = containerHeight - (topPipeHeight + pipeGap); // makes sure that there are gaps b/t pipes
         return {topPipeHeight, bottomPipeHeight}; 
     }
     function falling() {
