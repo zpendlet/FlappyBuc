@@ -17,7 +17,15 @@ document.addEventListener("DOMContentLoaded", () => {
     let pipeSpeed = 3; // Speed at which the pipes move left
     let topPipeX = parseInt(getComputedStyle(topPipe).left); // Get initial pipe positions
     let bottomPipeX = parseInt(getComputedStyle(bottomPipe).left);
-
+    let pipeGap = 200; 
+    /* The function below creates pipes of different heights keeping a gap and max and min height*/
+    function randomPipeHeight(){
+        const maxPipeHeight = containerHeight - 50; // maximum per pipe
+        const minPipeHeight = 100;  // minimum height per pipe
+        const topPipeHeight = Math.floor(Math.random() * (maxPipeHeight - minPipeHeight)) + minPipeHeight; 
+        const bottomPipeHeight = containerHeight - topPipeHeight - pipeGap; // makes sure that there are gaps b/t pipes
+        return {topPipeHeight, bottomPipeHeight}; 
+    }
     function falling() {
         if (isGameStarted) {
             // Apply gravity
@@ -51,6 +59,20 @@ document.addEventListener("DOMContentLoaded", () => {
             // Move pipes to the left
             topPipeX -= pipeSpeed;
             bottomPipeX -= pipeSpeed;
+
+            //check if pipe has reached the halfway mark
+            if (topPipeX + topPipe.offsetWidth < containerWidth / 2) {
+                // Generate new random pipe sizes
+                const { topPipeHeight, bottomPipeHeight } = randomPipeHeight();
+
+                // Apply new sizes to the pipes
+                topPipe.style.height = `${topPipeHeight}px`;
+                bottomPipe.style.height = `${bottomPipeHeight}px`;
+
+                // Reset pipe positions
+                topPipeX = containerWidth;
+                bottomPipeX = containerWidth;
+            }
 
             // Reset pipes if they move off-screen (you can replace this logic later)
             if (topPipeX + topPipe.offsetWidth < 0) {
