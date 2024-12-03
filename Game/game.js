@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let y = 50; // Initial Y position (matches CSS top)
     let vertVelocity = 0; // Initial vertical velocity
     const gravity = 0.7; // Gravity speed
-    const jumpStrength = -12; // Upward velocity for jump
+    const jumpStrength = -9; // Upward velocity for jump
     let isGameStarted = false; // Game start flag
 
     let pipeSpeed = 3; // Speed at which the pipes move left
