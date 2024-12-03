@@ -20,11 +20,16 @@ document.addEventListener("DOMContentLoaded", () => {
     let pipeGap = 200; 
     /* The function below creates pipes of different heights keeping a gap and max and min height*/
     function randomPipeHeight(){
-        const maxPipeHeight = containerHeight - pipeGap - 50; // maximum per pipe
-        const minPipeHeight = 100;  // minimum height per pipe
-        const topPipeHeight = Math.floor(Math.random() * (maxPipeHeight - minPipeHeight)) + minPipeHeight; 
-        const bottomPipeHeight = containerHeight - topPipeHeight - pipeGap; // makes sure that there are gaps b/t pipes
-        return {topPipeHeight, bottomPipeHeight}; 
+          // Randomize the height of the top and bottom pipes, keeping the gap
+        const maxTopPipeHeight = containerHeight - pipeGap - 50; // Maximum height for the top pipe (leaving room for gap)
+        const minTopPipeHeight = 100; // Minimum height for the top pipe
+        const topPipeHeight = Math.floor(Math.random() * (maxTopPipeHeight - minTopPipeHeight)) + minTopPipeHeight;
+        
+        // Ensure bottom pipe has reasonable height by setting its height based on the remaining space
+        const minBottomPipeHeight = 100; // Minimum height for the bottom pipe
+        const bottomPipeHeight = Math.max(containerHeight - topPipeHeight - pipeGap, minBottomPipeHeight);
+
+        return { topPipeHeight, bottomPipeHeight };
     }
     function falling() {
         if (isGameStarted) {
