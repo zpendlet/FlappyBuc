@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let pipeGap = 200; 
     /* The function below creates pipes of different heights keeping a gap and max and min height*/
     function randomPipeHeight(){
-        const maxPipeHeight = containerHeight - 50; // maximum per pipe
+        const maxPipeHeight = containerHeight - pipeGap - 50; // maximum per pipe
         const minPipeHeight = 100;  // minimum height per pipe
         const topPipeHeight = Math.floor(Math.random() * (maxPipeHeight - minPipeHeight)) + minPipeHeight; 
         const bottomPipeHeight = containerHeight - topPipeHeight - pipeGap; // makes sure that there are gaps b/t pipes
