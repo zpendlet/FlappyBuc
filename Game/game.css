@@ -12,25 +12,38 @@ body {
 #container {
     width: 600px;
     height: 400px;
-    position: relative; /* Necessary for positioning .bucky inside it */
+    position: relative; /* Necessary for positioning elements inside */
     background-image: url("/larger.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    overflow: hidden; /* Ensures Bucky doesn't appear outside the container */
+    overflow: hidden; /* Ensures elements don't appear outside the container */
 }
 
-/* Pipe image styling */
-.pipe {
-    width: 600px;
-    height: 400px;
-    background-image: url("/Design_Visuals/Pipes.png");
+/* Pipe styles */
+
+/* Top pipe */
+.top-pipe {
+    width: 200px; /* Adjust based on the image dimensions */
+    height: 100px; /* Adjust based on the image dimensions */
+    background-image: url("/pipes/Top pipe-1.png");
     background-repeat: no-repeat;
     background-size: contain;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 0; /* Anchored to the top of the container */
+    left: 300px; /* Horizontal position (centered, adjust as needed) */
+}
+
+/* Bottom pipe */
+.bottom-pipe {
+    width: 200px; /* Adjust based on the image dimensions */
+    height: 200px; /* Adjust based on the image dimensions */
+    background-image: url("/pipes/Bottom pipe-1.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    bottom: 0; /* Anchored to the bottom of the container */
+    left: 275px; /* Horizontal position matches the top pipe */
 }
 
 /* Bucky element styling */
