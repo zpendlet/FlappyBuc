@@ -1,3 +1,4 @@
+/* Basic body styling */
 body {
     display: flex;
     justify-content: center;
@@ -11,9 +12,6 @@ body {
 #container {
     width: 600px;
     height: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     position: relative;
     background-image: url("larger.png"); /* Assuming this is your background */
     background-repeat: no-repeat;
@@ -23,7 +21,7 @@ body {
     font-family: "Comic Sans MS", cursive, sans-serif;
 }
 
-/* Single pipe image */
+/* Pipe image styling */
 .pipe {
     width: 600px; 
     height: 400px; 
