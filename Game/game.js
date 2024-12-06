@@ -1,3 +1,5 @@
+//Added randomPipeHeight using https://chatgpt.com/
+
 document.addEventListener("DOMContentLoaded", () => {
     const container = document.querySelector("#container");
     const bucky = document.querySelector(".bucky");
@@ -20,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let pipeGap = 200; 
     /* The function below creates pipes of different heights keeping a gap and max and min height*/
     function randomPipeHeight(){
-          // Randomize the height of the top and bottom pipes, keeping the gap
+          // Randomize the height orf the top and bottom pipes, keeping the gap
         const maxTopPipeHeight = containerHeight - pipeGap - 50; // Maximum height for the top pipe (leaving room for gap)
         const minTopPipeHeight = 100; // Minimum height for the top pipe
         const topPipeHeight = Math.floor(Math.random() * (maxTopPipeHeight - minTopPipeHeight)) + minTopPipeHeight;
